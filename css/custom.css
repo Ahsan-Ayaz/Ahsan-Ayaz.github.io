@@ -8,7 +8,7 @@
 	border: 1px solid;
 	padding: 20px;
 	position: relative;
-	height: 250px;
+	height: -webkit-fill-available;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -63,4 +63,23 @@
 }
 .project .desc a{
 	color: #ffffff;
+}
+
+@media screen and (max-width: 1024px){
+	.projects{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 768px){
+	.platforms{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.projects{
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-width: 425px){
+	.platforms{
+		grid-template-columns: 1fr 1fr;
+	}
 }
